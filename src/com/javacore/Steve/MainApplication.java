@@ -7,6 +7,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+
 public class MainApplication {
 
     static private int count = 1;
@@ -16,7 +17,6 @@ public class MainApplication {
         //BadApplication badApplication = new BadApplication();
         //badApplication.start();
         testXMLReader();
-
     }
 
     public static void testXMLReader() {
