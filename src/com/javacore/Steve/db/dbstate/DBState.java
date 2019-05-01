@@ -2,12 +2,22 @@ package com.javacore.Steve.db.dbstate;
 
 public abstract class DBState {
 
-    public void enter() {
-        System.out.println("Basic entering state");
+    protected String name;
+
+    public DBState(String name) {
+        this.name = name;
     }
 
-    public void changeState(){
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void enter() {
+        System.out.println("Basic entering state");
     }
 
     public void onQuery(String query) {

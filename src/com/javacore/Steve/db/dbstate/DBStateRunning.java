@@ -4,6 +4,10 @@ import com.javacore.Steve.db.DBApplication;
 
 public class DBStateRunning extends DBState {
 
+    public DBStateRunning(String name){
+        super(name);
+    }
+
     @Override
     public void enter() {
         System.out.println("Entering DBRunning state");
@@ -12,7 +16,7 @@ public class DBStateRunning extends DBState {
     @Override
     public void onStop() {
         //check if everything is ok
- //       DBApplication.INSTANCE.changeState(DBApplication.INSTANCE.stateStop);
+        DBApplication.INSTANCE.changeState(DBApplication.INSTANCE.stateStop);
     }
 
 

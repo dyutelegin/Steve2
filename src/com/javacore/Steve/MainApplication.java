@@ -1,5 +1,6 @@
 package com.javacore.Steve;
 
+import com.javacore.Steve.db.DBApplication;
 import com.javacore.Steve.db.misc.Utils;
 import com.javacore.Steve.db.misc.XMLDocumentHandler;
 import com.javacore.Steve.db.misc.DBConstants;
@@ -12,14 +13,14 @@ public class MainApplication {
 
     static private int count = 1;
     public static void main(String[] args) {
-        //DBApplication.INSTANCE.start();
+        DBApplication.INSTANCE.start();
         //DBApplication.INSTANCE.stop();
         //BadApplication badApplication = new BadApplication();
         //badApplication.start();
-        testXMLReader();
+        //XMLReader();
     }
 
-    public static void testXMLReader() {
+    public static void XMLReader() {
         try {
             Utils.readXMLDocument(DBConstants.STRUCTURE_DIR + "/Criminals.xml",
                     new XMLDocumentHandler() {

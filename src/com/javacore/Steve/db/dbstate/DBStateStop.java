@@ -8,6 +8,10 @@ import java.util.List;
 
 public class DBStateStop extends DBState {
 
+    public DBStateStop(String name) {
+        super(name);
+    }
+
     @Override
     public void enter() {
         System.out.println("Entering DBStop state");
@@ -15,7 +19,7 @@ public class DBStateStop extends DBState {
         List<String> list = new ArrayList<>();
         list.add("test string one");
         list.add("test string two");
- //       Utils.writeListToFile(list, DBConstants.DATA_DIR + "/test.dat");
+  //      Utils.writeListToFile(list, DBConstants.DATA_DIR + "/Criminal.dat");
     }
 
     @Override
